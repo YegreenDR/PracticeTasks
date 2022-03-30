@@ -30,7 +30,7 @@ namespace Practice_4.Task_1
             {
                 Console.WriteLine(ex.Message, ex.StackTrace);
             }
-            catch(DivideByZeroException ex)
+            catch (DivideByZeroException ex)
             {
                 Console.WriteLine(ex.Message,ex.StackTrace);
             }
