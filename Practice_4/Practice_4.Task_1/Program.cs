@@ -19,9 +19,6 @@ namespace Practice_4.Task_1
         {
             try
             {
-                Console.WriteLine("Введите значение Х1: ");
-                int x1 = int.Parse(Console.ReadLine());
-                Console.WriteLine($"Результат формулы y1: " + y1(x1));
                 Console.WriteLine("Введите значение Х2: ");
                 int x2 = int.Parse(Console.ReadLine());
                 Console.WriteLine($"Результат формулы y2: " + y2(x2));
@@ -30,9 +27,16 @@ namespace Practice_4.Task_1
             {
                 Console.WriteLine(ex.Message, ex.StackTrace);
             }
+            try
+            {
+
+                Console.WriteLine("Введите значение Х1: ");
+                int x1 = int.Parse(Console.ReadLine());
+                Console.WriteLine($"Результат формулы y1: " + y1(x1));
+            }
             catch (DivideByZeroException ex)
             {
-                Console.WriteLine(ex.Message,ex.StackTrace);
+                Console.WriteLine(ex.Message, ex.StackTrace);
             }
             Console.ReadLine();
         }
