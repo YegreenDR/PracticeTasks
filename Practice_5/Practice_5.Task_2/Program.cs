@@ -30,10 +30,17 @@ namespace Practice_5.Task_2
                 {
                     CountZero++;
                 }
-                Console.WriteLine($"Сумма всех положительных элементов: {sum}");
-                Console.WriteLine($"Кол-во отрицательных элементов: {CountZero}");
-                Console.WriteLine($"Кол-во нулевых элементов: {CountOtr}");
+                
             }
+            Array.Sort(arr);
+            Console.WriteLine("Отсортированный начальный массив: ", arr);
+            Console.WriteLine("Введите число для поиска: ");
+            int k = int.Parse(Console.ReadLine());
+            int SortIndexSearch = Array.BinarySearch(arr, k);
+            Console.WriteLine(SortIndexSearch);
+            Console.WriteLine($"Сумма всех положительных элементов: {sum}");
+            Console.WriteLine($"Кол-во отрицательных элементов: {CountZero}");
+            Console.WriteLine($"Кол-во нулевых элементов: {CountOtr}");
         }
     }
 }
