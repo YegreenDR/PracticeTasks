@@ -29,7 +29,7 @@ namespace Practice_5.Task_3
             {
                 for (int j = 0; j < r; j++)
                 {
-                    if (Matrix[i, j] > d)
+                    if (Matrix[i, j] < d)
                     {
                         count++;
                     }
