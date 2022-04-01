@@ -25,19 +25,29 @@ namespace Practice_5.Task_3
             }
             Console.WriteLine("Введите число поиска меньшего значения: ");
             int d = int.Parse(Console.ReadLine());
+            int averageColumnSum = 0;
             for (int i = 0; i < r; i++)
             {
                 for (int j = 0; j < r; j++)
                 {
+                    //count=Matrix[i, j] < d ? count++:;
                     if (Matrix[i, j] < d)
                     {
                         count++;
                     }
-                    Console.Write(Matrix[i, j] + "\t");
+                    Console.Write($"{Matrix[i, j],5}");
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("Кол-во чисел меньше указанного: ", count);
+            Console.WriteLine($"Кол-во чисел меньше указанного: {count}");
+            for (int i = 0; i < r; i++)
+            {
+                for (int j = 0; j < r; j++)
+                {
+                    averageColumnSum += Matrix[j, i];
+                }
+            }
+            Console.WriteLine($"average sum = {averageColumnSum}");
             Console.ReadKey();
         }
     }
