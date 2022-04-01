@@ -6,7 +6,17 @@ namespace Practice_6.Task_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Введите текст");
+            string text = Console.ReadLine();
+            string charInverse;
+            string textInverse = "";
+            for (int i = 0; i < text.Length; i++)
+            {
+                charInverse = text[i].ToString().ToLower() == text[i].ToString() ? 
+                text[i].ToString().ToUpper() : text[i].ToString().ToLower();
+                textInverse += charInverse;
+            }
+            Console.WriteLine(textInverse);
         }
     }
 }
