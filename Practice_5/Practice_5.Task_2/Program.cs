@@ -16,7 +16,7 @@ namespace Practice_5.Task_2
             for (int i = 0; i < n; i++)
             {
                 arr[i] = rnd.Next(-10,10);
-                Console.Write("Массив: ");
+                Console.Write("");
                 Console.Write($"{arr[i]} ");
                 if (arr[i] > 0)
                 {
@@ -33,7 +33,7 @@ namespace Practice_5.Task_2
                 
             }
             Array.Sort(arr);
-            Console.WriteLine("Отсортированный начальный массив: ", arr);
+            Console.WriteLine("Отсортированный начальный массив: "+String.Join(' ', arr));
             Console.WriteLine("Введите число для поиска: ");
             int k = int.Parse(Console.ReadLine());
             int SortIndexSearch = Array.BinarySearch(arr, k);
