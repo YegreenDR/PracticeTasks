@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Practice_11.Task_1
+namespace Practice_11.Task_1.models
 {
     internal class Furniture
     {

@@ -1,4 +1,4 @@
-﻿namespace Practice_11.Task_1;
+﻿namespace Practice_11.Task_1.models;
 
 class Program
 {
