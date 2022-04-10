@@ -12,7 +12,7 @@ class MyInfo
     {
         Adding($"Будет добавлена буква а: {name}");
         name += "a";
-        Added($"Добавление буквы а: {name}");
+        Added($"Была добавлена буква а: {name}");
     }
 }
 class Program
