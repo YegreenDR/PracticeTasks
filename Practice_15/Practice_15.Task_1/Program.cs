@@ -1,4 +1,5 @@
-﻿using Practice_15.Task_1;
+﻿class Program
+{
     static void Main(string[] args)
     {
         MyList<int> myList = new MyList<int>();
@@ -6,11 +7,18 @@
         {
             myList.Add(i);
         }
+
         foreach (var item in myList)
         {
-            Console.Write($"{item},");
+            Console.Write("{0} | ", item);
         }
+
         var count = myList.count;
-        Console.WriteLine($"\nКоличество элементов: {count} \n3й элемент: {myList[2]}");
+
+        Console.WriteLine("\nКоличество элементов: {0}", count);
+
+        Console.WriteLine("\n3й элемент: {0}", myList[2]);
+
         Console.ReadLine();
     }
+}
