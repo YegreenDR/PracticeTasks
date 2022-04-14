@@ -4,7 +4,7 @@
             Console.WriteLine("Сколько цифр должно быть в исходном файле (f)?");
             int n = int.Parse(Console.ReadLine());
             int r;
-
+            var directory = Directory.CreateDirectory("D:\\NewFolder");
             File.WriteAllText("D:\\f.txt", "");
             File.WriteAllText("D:\\g.txt", "");
             for (int i = 0; i < n; i++)
