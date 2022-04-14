@@ -13,7 +13,7 @@ namespace Practice_16.Task_2
                 while ((line = reader.ReadLine()) != null)
                 {
                     var count = line.Length;
-                    countsCharInLines.Add(count);
+                    countsCharInLines.Add(count+1);
                 }
             }
             return countsCharInLines;

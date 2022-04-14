@@ -11,7 +11,12 @@ class Program
         int count = File.ReadAllLines(filePath).Length;
         Console.WriteLine($"Количество строк: {count}");
         var numbers = SymbolCount.SymCount(filePath);
-        Console.Write($"Количество символов в строке: {numbers}");
+        int i = 1;
+        foreach (var num in numbers)
+        {
+            Console.WriteLine($"Кол-во символов в {i} строке: {num.ToString()}");
+            i++;
+        }
         Console.WriteLine("\nУдаление последней строки и запись результата в другой файл");
         DeleteString.DeleteStringAndWrite(filePath, filePath1);
         Console.WriteLine("--------------");
