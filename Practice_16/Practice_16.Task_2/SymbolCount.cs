@@ -4,17 +4,19 @@ namespace Practice_16.Task_2
 {
     internal class SymbolCount
     {
-        public static void SymCount()
+        public static List<int> SymCount(string filePath)
         {
-            var charCount = 0;
-            using (var reader = new StreamReader(@"D:\Practice16.txt", detectEncodingFromByteOrderMarks: true))
+            var countsCharInLines = new List<int>();
+            using (var reader = new StreamReader(filePath, detectEncodingFromByteOrderMarks: true))
             {
-                while (reader.Read() > -1)
+                var line = String.Empty;
+                while ((line = reader.ReadLine()) != null)
                 {
-                    charCount++;
+                    var count = line.Length;
+                    countsCharInLines.Add(count);
                 }
             }
-            Console.WriteLine(charCount);
+            return countsCharInLines;
         }
     }
 }

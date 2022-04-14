@@ -6,11 +6,15 @@ class Program
         Console.WriteLine("Вывод текста из файла");
         PrintFromTXT.Print();
         Console.WriteLine("--------------");
-        int count = File.ReadAllLines("D:\\Practice16.txt").Length;
-        Console.WriteLine($"Кол-во строк: {count}");
-        Console.WriteLine("Кол-во символов в строке: ");
+        var filePath = @"D:\Practice16.txt";
+        var filePath1 = @"D:\Practice16Dop.txt";
+        int count = File.ReadAllLines(filePath).Length;
+        Console.WriteLine($"Количество строк: {count}");
+        var numbers = SymbolCount.SymCount(filePath);
+        Console.Write($"Количество символов в строке: {numbers}");
+        Console.WriteLine("\nУдаление последней строки и запись результата в другой файл");
+        DeleteString.DeleteStringAndWrite(filePath, filePath1);
         Console.WriteLine("--------------");
-        SymbolCount.SymCount();
 
         Console.ReadKey();
     }
