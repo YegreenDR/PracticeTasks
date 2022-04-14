@@ -20,7 +20,10 @@ class Program
         Console.WriteLine("\nУдаление последней строки и запись результата в другой файл");
         DeleteString.DeleteStringAndWrite(filePath, filePath1);
         Console.WriteLine("--------------");
-
+        S1toS2.GetStringsS1ToS2(filePath, 1, 3);
+        LongestString.GetLongestString(filePath);
+        GetStringFirstLetter.GetLineWithFirstLetter(filePath, 'в');
+        ReverseOutput.PrintToFileReverseLinesInfile(filePath);
         Console.ReadKey();
     }
 }
