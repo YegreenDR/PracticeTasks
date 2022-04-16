@@ -2,7 +2,6 @@
 {
     public class Triangle
     {
-
         public double SideA { get; set; }
         public double SideB { get; set; }
         public double SideC { get; set; }
@@ -11,7 +10,7 @@
         {
             return SideA + SideB + SideC;
         }
-        public string TriangleForm(double one, double two, double three) 
+        public string TriangleForm(double one, double two, double three)
         {
             if (one <= 0 || two <= 0 || three <= 0 || one + two <= three || one + three <= two || two + three <= one)
             {
@@ -27,12 +26,12 @@
                 double s = (three * Math.Sqrt(4 * Math.Pow(one, 2) - Math.Pow(two, 2))) / 4;
                 return "Треугольник равнобедренный!\nПлощадь треугольника равна " + Convert.ToString(s);
             }
-            else 
+            else
             {
                 double p = TriPerimetr(one, two, three) / 2;
-                double s = Math.Sqrt(p*(p-one)*(one-two)*(p-three));
+                double s = Math.Sqrt(p * (p - one) * (one - two) * (p - three));
                 return "Треугольник разносторонний!\nПлощадь треугольника равна " + Convert.ToString(s);
             }
-            }
+        }
     }
 }

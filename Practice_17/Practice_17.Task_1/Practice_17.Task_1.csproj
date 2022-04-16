@@ -3,13 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>Practice_17.Task__1_</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Practice_17.Task_1\MyLib.csproj" />
+    <ProjectReference Include="..\MyLib\MyLib.csproj" />
   </ItemGroup>
 
 </Project>
