@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
-
-namespace ConsoleApplication1
+﻿namespace Practice_18.Task_2
 {
     class Program
     {
