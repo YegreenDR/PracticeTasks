@@ -135,7 +135,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyLib", "Practice_17\MyLib\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice_17.Task_1", "Practice_17\Practice_17.Task_1\Practice_17.Task_1.csproj", "{D112D2DD-134C-4E18-BDEA-675619F95540}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_18.Task_2", "Practice_18\Practice_18.Task_2\Practice_18.Task_2.csproj", "{217A2501-060F-477B-99DC-A16F4361773F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice_18.Task_2", "Practice_18\Practice_18.Task_2\Practice_18.Task_2.csproj", "{217A2501-060F-477B-99DC-A16F4361773F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
