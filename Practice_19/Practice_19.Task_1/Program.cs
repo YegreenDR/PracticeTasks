@@ -14,7 +14,6 @@
             return (a < b) ? a : b;
         }
     }
-
     static void Main(string[] args)
     {
         Console.WriteLine("Введите x: ");
