@@ -4,6 +4,11 @@
     {
         Water water = new Water(new LiquidWaterState());
         water.Heat();
+        water.Heat();
+        water.Heat();
+        water.Heat();
+        water.Frost();
+        water.Frost();
         water.Frost();
         water.Frost();
 
