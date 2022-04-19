@@ -6,11 +6,11 @@
         water.Heat();
         water.Heat();
         water.Heat();
+        water.Frost();
+        water.Frost();
+        water.Frost();
+        water.Frost();
         water.Heat();
-        water.Frost();
-        water.Frost();
-        water.Frost();
-        water.Frost();
 
         Console.Read();
     }
