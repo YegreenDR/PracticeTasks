@@ -19,9 +19,11 @@ namespace Practice_22.Task_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double a = Convert.ToDouble(textBox2.Text);
-            double b = Convert.ToDouble(textBox3.Text);
-            double u = (a * a + b * b + 2);
+            double x = -15.246;
+            double y = 4.642 * Math.Pow(10, -2);
+            double z = 20.001 * Math.Pow(10,2);
+            double a = -182.036;
+            double u = Math.Log10(Math.Pow(y,Math.Sqrt(Math.Abs(-x))))*(x-y/2)+Math.Pow(Math.Sin(Math.Atan(z)),2);
             textBox1.Text = u.ToString();
         }
     }
