@@ -26,7 +26,7 @@ namespace Practice_22.Task_3
             double x = x0;
             while (x <= (xk + dx / 2))
             {
-            double y = a * Math.Log(x);
+            double y = Math.Pow(x,4) + Math.Cos(2+ Math.Pow(x,3) - a);
                 textBox5.Text += "x=" + Convert.ToString(x) +"; y=" + Convert.ToString(y) +Environment.NewLine;
                 x = x + dx;
             }
