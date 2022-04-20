@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Practice_22.Task_2.Properties
+namespace Practice_22.Task_3.Properties
 {
 
 

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
-[assembly: AssemblyTitle("Practice_22.Task_2")]
+[assembly: AssemblyTitle("Practice_22.Task_3")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Practice_22.Task_2")]
+[assembly: AssemblyProduct("Practice_22.Task_3")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("db33dc6a-3d48-4fe3-af37-83d5683c89e2")]
+[assembly: Guid("9a528e73-afe8-4518-aebc-304182d3b076")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

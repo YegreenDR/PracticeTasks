@@ -16,25 +16,5 @@ namespace Practice_22.Task_3
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            double i = Convert.ToDouble(textBox1.Text);
-            double x = Convert.ToDouble(textBox2.Text);
-            double u; 
-            if ((i % 2 != 0) & (x > 0))
-            {
-                double u = i * Math.Sqrt(x);
-            }
-            else if ((i % 2 == 0) & (x < 0))
-            {
-                double u = i / 2 * Math.Sqrt(Math.Abs(x));
-            }
-            else
-            {
-                double u = Math.Sqrt(i * x);
-            }
-            textBox3.Text = u.ToString();
-        }
     }
 }
