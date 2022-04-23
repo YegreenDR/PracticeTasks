@@ -191,6 +191,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practice_25", "Practice_25"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_25.Task_1", "Practice_25\Practice_25.Task_1\Practice_25.Task_1.csproj", "{0879885F-B2A3-4778-9D4C-B8DCF80ECA59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_25.Task_2", "Practice_25\Practice_25.Task_2\Practice_25.Task_2.csproj", "{BDEE8047-A7E6-4600-A430-B0CAE7204030}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -469,6 +471,10 @@ Global
 		{0879885F-B2A3-4778-9D4C-B8DCF80ECA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0879885F-B2A3-4778-9D4C-B8DCF80ECA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0879885F-B2A3-4778-9D4C-B8DCF80ECA59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEE8047-A7E6-4600-A430-B0CAE7204030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEE8047-A7E6-4600-A430-B0CAE7204030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEE8047-A7E6-4600-A430-B0CAE7204030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEE8047-A7E6-4600-A430-B0CAE7204030}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -544,6 +550,7 @@ Global
 		{6FA162A4-4381-4B9D-9FEC-88A3433FCEAB} = {5C85C7CE-4F63-4547-91C5-9F407826C313}
 		{9071C7DE-A8BD-4C5D-BAFC-F740A4176FC1} = {5C85C7CE-4F63-4547-91C5-9F407826C313}
 		{0879885F-B2A3-4778-9D4C-B8DCF80ECA59} = {4BCBE036-2F7F-454D-8411-8F136542B7B5}
+		{BDEE8047-A7E6-4600-A430-B0CAE7204030} = {4BCBE036-2F7F-454D-8411-8F136542B7B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD0E212A-263C-4CA7-B872-EA9AF02F35C4}
