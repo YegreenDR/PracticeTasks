@@ -15,7 +15,7 @@ namespace Practice_24.Task_1
             switch (e.ClickedItem.Tag.ToString())
             {
                 case "NewDoc":
-                    textBox1.Text = "Button1Clicked";
+                    textBox1.Text = "𐐘 𐑀 ඞ 𐐘 𐐘 𐑀 ඞ";
                     spWin.Text = "Windows is horizontal";
                     InitializeComponent();
                     spData.Text = Convert.ToString(DateTime.Today.ToLongDateString());
