@@ -1,4 +1,5 @@
-﻿using Practice_26.Task_1.InterFaces;
+﻿using Microsoft.Extensions.Logging;
+using Practice_26.Task_1.InterFaces;
 using Practice_26.Task_1.models;
 using System;
 using System.Collections.Generic;
@@ -75,8 +76,8 @@ namespace Practice_26.Task_1.Share
                 {
                     return parking;
                 }
-                return parking;
             }
+            return parking;
         }
 
         public List<Parking> GetAll()
@@ -86,14 +87,15 @@ namespace Practice_26.Task_1.Share
             foreach (XmlNode node in xRoot)
             {
                 var parking = GetParking(node);
-                parkingg.Add(Parking);
+                parkingg.Add(parking);
             }
+            return parkingg;
         }
 
         public void Load(string xmlDocPath)
         {
-            _xmlFilePath = xmlFilePath;
-            _document.Load(xmlFilePath);
+            _xmlFilePath = xmlDocPath;
+            _document.Load(xmlDocPath);
         }
         private Parking GetParking(XmlNode node)
         {
@@ -107,11 +109,11 @@ namespace Practice_26.Task_1.Share
             {
                 try
                 {
-                    if (childNode.Mark.Equals("year"))
+                    if (childNode.Name.Equals("year"))
                     {
                         parking.Year = (childNode.InnerText);
                     }
-                    if (childNode.Mark.Equals("date"))
+                    if (childNode.Name.Equals("date"))
                     {
                         parking.Date = int.Parse(childNode.InnerText);
                     }
