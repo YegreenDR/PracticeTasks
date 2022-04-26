@@ -54,7 +54,7 @@ namespace Practice_26.Task_1
             textBlockXMLFileContent.Text = "=======Parking========" + Environment.NewLine;
             textBlockXMLFileContent.Text += parkingg?.ToString() ?? "Parking not found";
         }
-        private void PrintCountries(Func<List<Parking>> parking)
+        private void PrintCountries(List<Parking> parking)
         {
             textBlockXMLFileContent.Text = "========Autos=======" + Environment.NewLine;
             foreach (var parkingg in parking)
