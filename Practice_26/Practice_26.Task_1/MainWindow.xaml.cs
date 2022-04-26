@@ -49,15 +49,15 @@ namespace Practice_26.Task_1
                 PrintCountries(_worker.GetAll);
             }
         }
-        private void PrintCountry(Parking parking)
+        private void PrintCountry(Parking parkingg)
         {
             textBlockXMLFileContent.Text = "=======Parking========" + Environment.NewLine;
-            textBlockXMLFileContent.Text += parking?.ToString() ?? "Parking not found";
+            textBlockXMLFileContent.Text += parkingg?.ToString() ?? "Parking not found";
         }
-        private void PrintCountries(List<Parking> parkingg)
+        private void PrintCountries(Func<List<Parking>> parking)
         {
             textBlockXMLFileContent.Text = "========Autos=======" + Environment.NewLine;
-            foreach (var parking in parkingg)
+            foreach (var parkingg in parking)
             {
                 textBlockXMLFileContent.Text += parking.ToString();
             }
