@@ -34,9 +34,9 @@
         <Button x:Name="buttonAdd" Content="Добавить" HorizontalAlignment="Left" Height="68" Margin="10,0,0,0" Grid.Row="3" VerticalAlignment="Center" Width="564" Click="buttonAdd_Click"/>
         <Label Grid.Column="1" Content="Найти" HorizontalAlignment="Left" Height="26" Margin="10,8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="91"/>
         <Label Grid.Column="1" Content="Удаление" HorizontalAlignment="Left" Height="27" Margin="10,8,0,0" Grid.Row="2" VerticalAlignment="Top" Width="91"/>
-        <TextBlock x:Name="textBlockXMLFileContent" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="121" Width="577" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
         <TextBox x:Name="textBoxCountryName"  Grid.Column="1" HorizontalAlignment="Center" Height="32" Margin="0,44,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="183"/>
-        <TextBox x:Name="textBoxDeleteCountryName" TextWrapping="Wrap" Margin="10,40,26,58" Grid.Row="2" RenderTransformOrigin="0.5,0.5" Grid.Column="1"/> 
+        <TextBox x:Name="textBoxDeleteCountryName" TextWrapping="Wrap" Margin="10,40,26,58" Grid.Row="2" RenderTransformOrigin="0.5,0.5" Grid.Column="1"/>
+        <TextBox x:Name="textBlockXMLFileContent" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="121" Width="577" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
 
     </Grid>
 </Window>

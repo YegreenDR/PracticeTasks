@@ -32,7 +32,7 @@ namespace Practice_26.Task_1.Share
             yearElem.AppendChild(yearElem);
             parkingElem.AppendChild(yearElem);
 
-            XmlElement dateElem = _document.CreateElement("ReantDate");
+            XmlElement dateElem = _document.CreateElement("RentDate");
             XmlText dateInnerText = _document.CreateTextNode(auto.RentDays.ToString());
             dateElem.AppendChild(dateInnerText);
             parkingElem.AppendChild(dateElem);
@@ -113,7 +113,7 @@ namespace Practice_26.Task_1.Share
                     {
                         parking.Year = (childNode.InnerText);
                     }
-                    if (childNode.Name.Equals("date"))
+                    if (childNode.Name.Equals("RentDate"))
                     {
                         parking.RentDays = int.Parse(childNode.InnerText);
                     }

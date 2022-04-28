@@ -49,17 +49,17 @@ namespace Practice_26.Task_1
                 PrintCountries(_worker.GetAll());
             }
         }
-        private void PrintCountry(Auto parkingg)
+        private void PrintCountry(Auto parking)
         {
             textBlockXMLFileContent.Text = "=======Parking========" + Environment.NewLine;
-            textBlockXMLFileContent.Text += parkingg?.ToString() ?? "Parking not found";
+            textBlockXMLFileContent.Text += parking?.ToString() ?? "Parking not found";
         }
         private void PrintCountries(List<Auto> parking)
         {
             textBlockXMLFileContent.Text = "========Autos=======" + Environment.NewLine;
             foreach (var parkingg in parking)
             {
-                textBlockXMLFileContent.Text += parking.ToString();
+                textBlockXMLFileContent.Text += parkingg.ToString();
             }
         }
         private void textBoxCountryName_TextChanged(object sender)
