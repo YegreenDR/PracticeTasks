@@ -10,9 +10,9 @@ namespace Practice_26.Task_1.InterFaces
     public interface IXmlWorker
     {
         void Load(string xmlDocPath);
-        void Add(Parking parking);
+        void Add(Auto parking);
         void Delete(string mark);
-        Parking FindBy(string mark);
-        List<Parking> GetAll();
+        Auto FindBy(string mark);
+        List<Auto> GetAll();
     }
 }

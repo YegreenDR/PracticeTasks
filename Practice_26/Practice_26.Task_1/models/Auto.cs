@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Practice_26.Task_1.models
 {
-    public class Parking
+    public class Auto
     {
         public string Mark { get; set; }
         public string Year { get; set; }
-        public int Date { get; set; }
+        public int RentDays { get; set; }
         public override string ToString()
         {
             return new StringBuilder().AppendLine($"Марка автомобиля {Mark}")
                 .AppendLine($"\tГод выпуска {Year}")
-                .AppendLine($"Кол-во дней аренды {Date}").ToString();
+                .AppendLine($"Кол-во дней аренды {RentDays}").ToString();
         }
     }
 }

@@ -18,22 +18,22 @@ namespace Practice_26.Task_1.Share
             _document = new XmlDocument();
         }
 
-        public void Add(Parking parking)
+        public void Add(Auto auto)
         {
             var xRoot = _document.DocumentElement;
-            XmlElement parkingElem = _document.CreateElement("mark");
+            XmlElement parkingElem = _document.CreateElement("Auto");
 
             XmlAttribute markAttribute = _document.CreateAttribute("mark");
-            XmlText markText = _document.CreateTextNode(parking.Mark);
+            XmlText markText = _document.CreateTextNode(auto.Mark);
             markAttribute.AppendChild(markText);
 
             XmlElement yearElem = _document.CreateElement("year");
-            XmlText yearInnerText = _document.CreateTextNode(parking.Year.ToString());
+            XmlText yearInnerText = _document.CreateTextNode(auto.Year.ToString());
             yearElem.AppendChild(yearElem);
             parkingElem.AppendChild(yearElem);
 
-            XmlElement dateElem = _document.CreateElement("Date");
-            XmlText dateInnerText = _document.CreateTextNode(parking.Date.ToString());
+            XmlElement dateElem = _document.CreateElement("ReantDate");
+            XmlText dateInnerText = _document.CreateTextNode(auto.RentDays.ToString());
             dateElem.AppendChild(dateInnerText);
             parkingElem.AppendChild(dateElem);
 
@@ -65,9 +65,9 @@ namespace Practice_26.Task_1.Share
                 }
             }
         }
-        public Parking FindBy(string mark)
+        public Auto FindBy(string mark)
         {
-            Parking parking = null;
+            Auto parking = null;
             var xRoot = _document.DocumentElement;
             foreach (XmlNode xmlNode in xRoot)
             {
@@ -80,9 +80,9 @@ namespace Practice_26.Task_1.Share
             return parking;
         }
 
-        public List<Parking> GetAll()
+        public List<Auto> GetAll()
         {
-            List<Parking> parkingg = new List<Parking>();
+            List<Auto> parkingg = new List<Auto>();
             var xRoot = _document.DocumentElement;
             foreach (XmlNode node in xRoot)
             {
@@ -97,9 +97,9 @@ namespace Practice_26.Task_1.Share
             _xmlFilePath = xmlDocPath;
             _document.Load(xmlDocPath);
         }
-        private Parking GetParking(XmlNode node)
+        private Auto GetParking(XmlNode node)
         {
-            var parking = new Parking();
+            var parking = new Auto();
             if (node.Attributes.Count > 0)
             {
                 var attributeMark = node.Attributes.GetNamedItem("mark");
@@ -115,7 +115,7 @@ namespace Practice_26.Task_1.Share
                     }
                     if (childNode.Name.Equals("date"))
                     {
-                        parking.Date = int.Parse(childNode.InnerText);
+                        parking.RentDays = int.Parse(childNode.InnerText);
                     }
                 }
                 catch (Exception ex) when (ex is FormatException || ex is NullReferenceException)

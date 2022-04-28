@@ -1,1 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<parking>
+	<Auto>
+		<year>1999</year>
+		<RentDate>25</RentDate>
+	</Auto>
+</parking>

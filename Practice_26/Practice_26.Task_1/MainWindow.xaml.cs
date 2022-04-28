@@ -33,7 +33,7 @@ namespace Practice_26.Task_1
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-            PrintCountries(_worker.GetAll);
+            PrintCountries(_worker.GetAll());
         }
 
         private void buttonExit_Click(object sender, RoutedEventArgs e)
@@ -46,15 +46,15 @@ namespace Practice_26.Task_1
             if (!string.IsNullOrEmpty(textBoxDeleteCountryName.Text) || !string.IsNullOrWhiteSpace(textBoxDeleteCountryName.Text))
             {
                 _worker.Delete(textBoxDeleteCountryName.Text);
-                PrintCountries(_worker.GetAll);
+                PrintCountries(_worker.GetAll());
             }
         }
-        private void PrintCountry(Parking parkingg)
+        private void PrintCountry(Auto parkingg)
         {
             textBlockXMLFileContent.Text = "=======Parking========" + Environment.NewLine;
             textBlockXMLFileContent.Text += parkingg?.ToString() ?? "Parking not found";
         }
-        private void PrintCountries(List<Parking> parking)
+        private void PrintCountries(List<Auto> parking)
         {
             textBlockXMLFileContent.Text = "========Autos=======" + Environment.NewLine;
             foreach (var parkingg in parking)
@@ -66,7 +66,7 @@ namespace Practice_26.Task_1
         {
             if (string.IsNullOrEmpty(textBoxCountryName.Text))
             {
-                PrintCountries(_worker.GetAll);
+                PrintCountries(_worker.GetAll());
             }
         }
 
@@ -82,7 +82,7 @@ namespace Practice_26.Task_1
                 _xmlFilePath = dialog.FileName;
                 textBlockXMLPathFile.Text = _xmlFilePath;
                 _worker.Load(_xmlFilePath);
-                PrintCountries(_worker.GetAll);
+                PrintCountries(_worker.GetAll());
             }
         }
     }
