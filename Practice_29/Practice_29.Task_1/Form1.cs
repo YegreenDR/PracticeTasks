@@ -28,7 +28,7 @@ namespace Practice_29.Task_1
             y2 = y1 - (int)(r * Math.Sin(a));
         }
         private double a;
-        private Pen pen = new Pen(Color.DarkGreen, 2);
+        private Pen pen = new Pen(Color.DarkRed, 2);
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
